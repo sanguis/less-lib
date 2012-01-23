@@ -1,0 +1,10 @@
+
+//calululating size base on master body font size in px
+//define @con before imporing this file :'17';
+//e.g: @con:'16';
+//output defualts to 100%
+.flex-size(@target: @con, @context: @con) {
+  font-size: percentage(@target/@context);
+}
+ 
+
