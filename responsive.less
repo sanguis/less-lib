@@ -3,8 +3,14 @@
 //define @con before imporing this file :'17';
 //e.g: @con:'16';
 //output defualts to 100%
-.flex-size(@target: @con, @context: @con) {
+.font-size(@target: @con, @context: @con) {
   font-size: percentage(@target/@context);
 }
- 
 
+.line-height(@target: @con, @context: @con) {
+  line-height: percentage(@target/@context);
+}
+
+.margin(@t: "auto", @r: "auto", @b: "auto", @l:"auto", @context: @con) {
+  margin:(@t/@context)em, @r/@context, @b/@context, @l/@context;
+}
