@@ -18,6 +18,7 @@
 //
 // Transformation:
 // @mixin transform
+// @mixin transform-origin
 // @mixin matrix
 // @mixin translate
 // @mixin scale
@@ -120,6 +121,30 @@
         -ms-transform: @arguments;
          -o-transform: @arguments;
             transform: @arguments;
+}
+
+
+
+//============================================================
+//
+// transform-origin
+//
+// @param functions           :  matrix()
+//                            :  translate()
+//                            :  scale()
+//                            :  rotate()
+//                            :  skew()
+//
+// @see http://www.w3.org/TR/css3-2d-transform-origins/
+//
+//============================================================
+
+.transform-origin() {
+    -webkit-transform-origin: @arguments;
+       -moz-transform-origin: @arguments;
+        -ms-transform-origin: @arguments;
+         -o-transform-origin: @arguments;
+            transform-origin: @arguments;
 }
 
 
